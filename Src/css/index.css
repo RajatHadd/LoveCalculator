@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@media only screen and (max-width: 940px) {
+    .app-container{
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10% !important;
+        margin-top: 10rem !important;
+        
+    }
+    .game-container{
+        width: 75% !important;
+        margin-bottom:1rem !important ;
+    }
+    input{
+        width: 90% !important;
+    }
+    .result-container{
+        width: 75% !important;
+    }
+    .contact-form{
+        display: flex !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-left:2rem ;
+        
+    }
+    .contact-form .c-right{
+        width: 75% !important;
+    }
+    .about{
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10% !important;
+        margin-top: 10rem !important;
+    }
+    .about .about-details{
+        width: 75% !important;
+        margin:1rem !important ;
+    }
+    .about .about-heading , .about-details{
+        text-align: center;
+    }
+  }
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    max-width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.colorLink {
+    background-color: pink;
+}
+.header-container{
+    width: 100%  !important;
+    z-index: 2 !important;
+    margin-left: 0;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    
+}
+.header-container .navbar {
+    font-size: larger;
+    z-index: 2 !important;
+    position: fixed !important;
+    top: 0;
+    background-color: white !important;
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+}
+.navbar-nav{
+    display: flex !important;
+    flex-direction: row !important;
+
+}
+.navbar-nav li{
+    margin-right: 4%;
+}
+.nav-item .active {
+    background-color: blue;
+}
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 22px;
+    margin-top: 15%;
+    margin-bottom:15%;
+    gap: 5%;
+    width: auto;
+}
+
+.app-container div {
+    padding: 10px;
+}
+
+body {
+    margin: 0 !important;
+    font-family: 'Tilt Neon', cursive !important;
+    width: 100% !important;
+}
+
+.button {
+    border-radius: 34px;
+    border: none;
+    color: while;
+    font-size: 16px;
+    padding: 11px 26px;
+    background: linear-gradient(180deg, pink 26.71%, rgb(245, 199, 227) 99.36%);
+    box-shadow: 0px 2px 12px 3px black;
+}
+
+.button:hover {
+    background: white;
+    cursor: pointer;
+    border: 1px solid pink;
+}
+.game-container {
+    text-align: center;
+    border: 2px solid pink;
+    height: 375px;
+}
+.result-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid pink;
+    width:  400px;
+    height: 350px;
+}
+
+.result-container .parent-container {
+    background-color: rgb(252, 6, 239);
+    width: 90%;
+    padding: 0;
+}
+#resultName1 , #resultName2{
+    color: red;
+}
+.result-container .parent-container #child-container {
+    background-color: pink;
+    width: 0px;
+    margin: 0;
+}
+
+#result-percentage , #love-message{
+    text-align: center;
+}
+
+#nameOne,
+#nameTwo {
+    background-color: rgb(247, 223, 227);
+}
+#heart-gify{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-top: 1rem;
+}
+input{
+    background-color: pink;
+}

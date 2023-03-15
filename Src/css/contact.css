@@ -1,0 +1,32 @@
+/*contact form css*/
+.contact-form{
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 22px;
+    gap: 10%;
+    width: auto;
+    margin-top: 10%;
+    margin-bottom:15%;
+}
+.contact-form .c-left span{
+    font-size: 50px;
+    color: rgb(250, 66, 97);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form1 *{
+    margin-top: 20px;
+}
+
+.c-right{
+    width:40vh;
+    border: 2px solid pink;
+}
+.c-right > *{
+    margin: 20px;
+}
+

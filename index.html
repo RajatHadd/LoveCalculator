@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./Src/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Src/css/about.css">
+    <link rel="stylesheet" href="./Src/css/contact.css">
+    <link rel="stylesheet" href="./Src/css/footer.css">
+    <title>Love Calculator</title>
+    <link rel="icon" type="image/x-icon" href="_images/favicon.ico.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script src="./Src/script/handleEmail.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("8WlImGVMZxBNHsfbt");
+        })();
+    </script>
+    <script type="text/javascript" src="./Src/script/script.js"></script>
+</head>
+
+<body>
+
+    <div class="body-contanier">
+
+        <div class="header-container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Love Calculator</a>
+                <div>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item colorLink">
+                            <a class="nav-link" href="#Home" onclick="activeLinkClass1()">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact" onclick="activeLinkClass2()">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About" onclick="activeLinkClass3()">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="app-container" id="Home">
+
+            <div class="game-container">
+                <div>
+                    <label for="nameOne">Name 1</label>
+                    <input type="text" id="nameOne" name="nameOne" placeholder="Enter name.." onfocus="true"
+                        onkeypress="return restrictionTf(event)">
+                    <div id="resultName1"></div>
+                </div>
+                <div>
+                    <label for="nameTwo">Name 2</label>
+                    <input type="text" id="nameTwo" placeholder="Enter name.." onkeypress="return restrictionTf(event)">
+                    <div id="resultName2"></div>
+                </div>
+
+                <button id="submitButton" onclick="submitEvent()" class="button">Calculate Love percentage</button><br>
+            </div><!--end of game container-->
+            <div class="heart-container">
+                <img id="heart-gify" src="./Src/videos/giphy.gif" alt="Beating Heart">
+            </div>
+            <div class="result-container" id="Result-container">
+                <div class="parent-container">
+                    <div id="child-container"></div>
+                </div>
+                <div id="result-percentage">0%</div>
+                <div id="love-message">Try you love!</div>
+
+            </div>
+            <!-- start of contact us form-->
+        </div>
+        <hr style="height:2px;border-width:0;background-color:rgb(248, 119, 140)">
+        <!--start of contact form-->
+        <div class="contact-form" id="Contact">
+            <div class="c-left">
+                <div class="awesome">
+                    <span>Get in touch</span><br>
+                    <span>Contact me!</span>
+                </div>
+            </div>
+            <div class="c-right">
+                <div class="form form1">
+                    <input type="text" id="name" class="user" placeholder="Name">
+                    <input type="text" id="email" class="user" placeholder="E-mail">
+                    <textarea id="message" class="user" placeholder="Message" cols="9" rows="2"></textarea>
+                    <button value="Send" class="button" onclick="sendEmail()">Send</button>
+                    <div id="result-email"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="height:2px;border-width:0;background-color:rgb(248, 119, 140)">
+
+    <div class="about" id="About">
+        <div class="about-heading">
+            <span>About</span>
+        </div>
+        <div class="about-details">
+            <p>
+                The games takes two names. Then, the two names are matched with each other which is then used to calculate the love percentage.
+            </p>
+            This game is developed as a result of the Collaboration between Bello Olaseni and Rajat Saini. <br>
+            
+        </div>
+    </div>
+    <footer class="footer-container">
+        <span>rajatsaini94680@gmail.com : Olasenibello38@gmail.com </span> <br>
+        <span>&copy; &nbsp;Rajat Saini &nbsp; & &nbsp; Bello</span>
+    </footer>
+
+
+</body>
+
+</html>
