@@ -1,16 +1,19 @@
-##The Love Calculator
+# The Love Calculator
 Love Calculator website
 
-##Purpose
+## Purpose
 A website that calculates the love between two people in real time.
 
-##Built With
-HTML CSS Javascript Bootstrap
+## Built With
+HTML
+CSS
+Javascript
+Bootstrap
 
-##Website
+# Website
 https://rajathadd.github.io/LoveCalculator/
 
-##Contribution
+## Contribution
 Made by a patnership between Bello Olaseni and Rajat Rajat
 
-2023
+### 2023
